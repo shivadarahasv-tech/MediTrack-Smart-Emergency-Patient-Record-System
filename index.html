@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>MediVault - Emergency Medical History Tracker</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+<h1>🏥 MediVault</h1>
+<p>Emergency Medical History Tracker</p>
+</header>
+
+<div class="container">
+
+<h3>Add Patient Record</h3>
+
+<input type="text" id="pid" placeholder="Patient ID">
+<input type="text" id="name" placeholder="Name">
+<input type="text" id="blood" placeholder="Blood Group">
+<input type="text" id="condition" placeholder="Condition">
+<input type="text" id="contact" placeholder="Contact">
+
+<button onclick="addPatient()">Add Patient</button>
+
+<h3>Search Patient</h3>
+
+<input type="text" id="searchID" placeholder="Enter Patient ID">
+<button onclick="searchPatient()">Search</button>
+<button onclick="sortPatients()">Sort by Name</button>
+
+<table id="patientTable">
+<tr>
+<th>ID</th>
+<th>Name</th>
+<th>Blood Group</th>
+<th>Condition</th>
+<th>Contact</th>
+</tr>
+</table>
+
+</div>
+
+<footer>
+Shivadarahas | Roll No: 2520040038 | Cluster 1
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
